@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "description" content = "Projeto Portifólio">
+    <meta name = "author" content ="Fernando Lana">
+    <meta name = "keywords" content ="HTML, CSS, JavaScript">
+    <link rel="icon" href="./assets/img/favicon.svg" />
+    <title>Portifólio do Fernando Lana</title>
+</head>
+<body>
+    
+    <!-- Cabeçalho da página -->
+    <header> 
+        <div id ="header_content">
+
+            <div id="titulo">
+                <a href="#">Universo</a>
+            </div>
+            
+            <!-- Menu -->
+            <div id="menu">
+                <nav>
+                    <!-- Marcadores não Ordenados -->
+                     <ul>
+                         <li><a href="#">Home</a></li>
+                         <li><a href="#about">Sobre</a></li>
+                         <li><a href="#contact">Contato</a></li>
+                          
+                     </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Seção Principals da Página -->
+    <main> 
+        <section id="home">
+            <article id="home_texto">
+                <h4>Bem-Vindo ao Novo Universo</h4>
+                <h1>Mundos diferentes para pessoas diferentes</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel ligula at dui laoreet ultricies. Donec ullamcorper, felis vitae scelerisque tristique, velit mi eleifend neque, vel lobortis justo turpis at ex. Maecenas vel ligula at dui laoreet ultricies.</p>
+                <a href="https://github.com/loslanas" target="_blank">
+                    Explorar
+                </a>
+            </article>
+            
+            <article id="home_imagem">
+                    <img src="./assets/img/astronauta.svg"
+                    alt="Capacete de Astronauta Animado">
+
+            </article>
+        </section>
+        
+
+        <section id="about">
+            <img src="./assets/img/user_01.svg"
+                    alt="Foto do perfil do Github">
+            <article id="about_texto">
+                <h1>Sobre mim</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel ligula at dui laoreet ultricies. Donec ullamcorper, felis vitae scelerisque tristique, velit mi eleifend neque, vel lobortis justo turpis at ex. Maecenas vel ligula at dui laoreet ultricies.</p>
+            
+                <div id="about_github">
+                    <a href="https://github.com/loslanas" target="_blank">
+                        GITHUB
+                    </a>
+                    <p>69 seguidores</p>
+                    <p>24 Repositórios</p>
+                </div>
+            </article>        
+        </section>
+        
+        <section id="contact">  
+            <h4>Contate-me</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A voluptatum impedit ullam nisi recusandae cumque eveniet voluptas asperiores, obcaecati excepturi. Distinctio laudantium expedita natus ea provident. Unde, numquam! Rem, ullam.</p>
+
+            <div id="icones_redes_sociais">
+                <a href="https://www.linkedin.com/in/fernando-lana/">
+                    <img src="./assets/img/linkedin.svg" alt="Ícone Linkedin">
+                </a>
+                
+                <a href="https://github.com/loslanas">
+                    <img src="./assets/img/github.svg" alt="Ícone Github">
+                </a>  
+                
+                <a href="https://www.instagram.com/ow_lana/?hl=pt">
+                    <img src="./assets/img/instagram.svg" alt="Ícone Instagram">
+                </a> 
+            </div>
+        
+            <form action="" method="POST">
+
+                <label for="nome">Nome</label>
+                <input id="nome" 
+                type ="text" 
+                name="nome"
+                placeholder="Digite o seu nome">
+                <span id="txtNome"></span>
+
+                <label for="email">Email</label>
+                <input id="email" 
+                type ="text" 
+                name="email"
+                placeholder="Digite o seu e-mail">
+                <span id="txtEmail"></span>
+
+                <label for="assunto">Assunto</label>
+                <input id="assunto" 
+                type ="text" 
+                name="assunto"
+                placeholder="Digite o assunto da mensagem">
+                <span id="txtAssunto"></span>
+
+                <label for="mensagem">Mensagem</label>
+                <textarea
+                    id="mensagem"
+                    name="mensagem"
+                    placeholder="Digite a sua mensagem"
+                    >
+                    </textarea>
+                    <button type="submit">Enviar</button>
+            </form>
+        
+        </section>
+    
+    </main>
+    
+    <!-- Rodapé da página -->
+    <footer> 
+        Feito com 🧡 por Fernando Lana 🍁 - 2025
+ 
+    </footer>
+</body>
+</html>
