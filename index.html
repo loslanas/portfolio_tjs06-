@@ -1,52 +1,68 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+
+    <!-- Fontes do Google -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ 
+    <!-- Fonte do Google - Poppins -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name = "description" content = "Projeto Portifólio">
     <meta name = "author" content ="Fernando Lana">
     <meta name = "keywords" content ="HTML, CSS, JavaScript">
-    <link rel="icon" href="./assets/img/favicon.svg" />
+    
+    <link rel="icon" href="./assets/img/favicon.svg" >
+    
+    <!-- Link para a folha de estilos CSS -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    
     <title>Portifólio do Fernando Lana</title>
 </head>
 <body>
     
     <!-- Cabeçalho da página -->
-    <header> 
-        <div id ="header_content">
-
-            <div id="titulo">
-                <a href="#">Universo</a>
+    <header class="flex menu_container"> 
+        <div id ="header_content" class="menu_content">
+            <div id="titulo" >
+                <h1><a href="#">Universo</a></h1>
             </div>
             
             <!-- Menu -->
-            <div id="menu">
+            <div class="flex" id="menu" >
                 <nav>
+                    <!-- <div id="menu_links"> -->
                     <!-- Marcadores não Ordenados -->
-                     <ul>
+                     <ul class="flex menu_list">
                          <li><a href="#">Home</a></li>
                          <li><a href="#about">Sobre</a></li>
                          <li><a href="#contact">Contato</a></li>
                           
                      </ul>
+                    <!-- </div> -->
                 </nav>
             </div>
         </div>
     </header>
     
-    <!-- Seção Principals da Página -->
+    <!-- Seção Principal da Página -->
     <main> 
-        <section id="home">
-            <article id="home_texto">
+        <section id="home" class="home_container">
+            <article id="home_texto" class=" flex home_content">
                 <h4>Bem-Vindo ao Novo Universo</h4>
                 <h1>Mundos diferentes para pessoas diferentes</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel ligula at dui laoreet ultricies. Donec ullamcorper, felis vitae scelerisque tristique, velit mi eleifend neque, vel lobortis justo turpis at ex. Maecenas vel ligula at dui laoreet ultricies.</p>
-                <a href="https://github.com/loslanas" target="_blank">
+                <a href="https://github.com/loslanas" 
+                target="_blank"
+                class="botao">
                     Explorar
                 </a>
             </article>
             
-            <article id="home_imagem">
+            <article id="home_imagem" class = "home_content">
                     <img src="./assets/img/astronauta.svg"
                     alt="Capacete de Astronauta Animado">
 
@@ -54,15 +70,16 @@
         </section>
         
 
-        <section id="about">
+        <section id="about" class="about_container">
             <img src="./assets/img/user_01.svg"
                     alt="Foto do perfil do Github">
             <article id="about_texto">
-                <h1>Sobre mim</h1>
+                <h2>Sobre mim</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel ligula at dui laoreet ultricies. Donec ullamcorper, felis vitae scelerisque tristique, velit mi eleifend neque, vel lobortis justo turpis at ex. Maecenas vel ligula at dui laoreet ultricies.</p>
             
-                <div id="about_github">
-                    <a href="https://github.com/loslanas" target="_blank">
+                <div id="about_github" class="flex about_github">
+                    <a href="https://github.com/loslanas" target="_blank"
+                    class="botao">
                         GITHUB
                     </a>
                     <p>69 seguidores</p>
@@ -71,11 +88,12 @@
             </article>        
         </section>
         
-        <section id="contact">  
-            <h4>Contate-me</h4>
+        <!-- Seção de Contato - Redes Sociais -->
+        <section id="contact" class="contato_content contato_container">  
+            <h2>Contate-me</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A voluptatum impedit ullam nisi recusandae cumque eveniet voluptas asperiores, obcaecati excepturi. Distinctio laudantium expedita natus ea provident. Unde, numquam! Rem, ullam.</p>
 
-            <div id="icones_redes_sociais">
+            <div id="icones_redes_sociais" class = " flex social_container  social_icon">
                 <a href="https://www.linkedin.com/in/fernando-lana/">
                     <img src="./assets/img/linkedin.svg" alt="Ícone Linkedin">
                 </a>
@@ -127,7 +145,7 @@
     </main>
     
     <!-- Rodapé da página -->
-    <footer> 
+    <footer class="flex footer_container"> 
         Feito com 🧡 por Fernando Lana 🍁 - 2025
  
     </footer>
