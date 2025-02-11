@@ -191,15 +191,16 @@ h4 {
     height: 4.75rem;
  }
 
-.social_icon:hover{filter: brightness(0)
-    saturate(100%)
-    invert(20%)
-    sepia(24%)
-    saturate(4557%)
-    hue-rotate(242deg)
-    brightness(89%)
-    contrast(108%);}
-
+ .social_icon:hover {
+    filter: brightness(0)
+        saturate(100%)
+        invert(20%)
+        sepia(100%)
+        saturate(3000%)
+        hue-rotate(-10deg)
+        brightness(100%)
+        contrast(100%);
+}
     /* estilização do formulário */
 .form{
     display: flex;
